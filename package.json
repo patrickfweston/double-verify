@@ -1,0 +1,24 @@
+{
+  "name": "double-verify",
+  "version": "0.0.1",
+  "description": "A simple prototyped page utilizing material design",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickfweston/double-verify.git"
+  },
+  "author": "Patrick Weston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickfweston/double-verify/issues"
+  },
+  "homepage": "https://github.com/patrickfweston/double-verify"
+}
