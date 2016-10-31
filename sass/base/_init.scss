@@ -1,0 +1,25 @@
+// Colors
+$primary: #09AFF8;
+$primary-80: lighten($primary, 0.9);
+
+$black: #000;
+
+$gray: #E7E6E6;
+
+$white: #fff;
+
+// Breakpoints
+$breakpoints: (
+  'bp0': 480px,
+  'bp1': 600px,
+  'bp2': 840px,
+  'bp3': 960px,
+  'bp4': 1280px,
+  'bp5': 1440px,
+  'bp6': 1600px,
+) !default;
+
+
+body {
+  background-color: green;
+}

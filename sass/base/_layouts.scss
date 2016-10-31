@@ -1,0 +1,9 @@
+// Layout styles 
+.container {
+  width: 100%;
+
+  @include respond-to('bp3') {
+    width: 66.666%;
+    margin-left: 33.333%;
+  }
+}

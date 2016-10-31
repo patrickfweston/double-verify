@@ -1,0 +1,17 @@
+body {
+  background-color: green; }
+
+.container {
+  width: 100%; }
+  @media (min-width: 960px) {
+    .container {
+      width: 66.666%;
+      margin-left: 33.333%; } }
+
+h1 {
+  color: #0db0f8; }
+
+.card {
+  border: 1px solid #E7E6E6;
+  box-shadow: 0 0 2px 2px #E7E6E6;
+  background-color: #fff; }
