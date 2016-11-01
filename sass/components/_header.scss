@@ -1,4 +1,5 @@
 .header--top {
+  position: relative;
   background-color: $primary;
 
   @include respond-to('bp2') {

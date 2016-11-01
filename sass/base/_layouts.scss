@@ -1,6 +1,18 @@
 // Layout styles
 .l-main {
   position: relative;
+  max-width: $max-width;
+}
+
+.l-main--header {
+  @extend .l-main;
+
+  margin: 0 auto;
+  max-width: calc(1100px - 48px);
+
+  @include respond-to('bp3') {
+    min-height: 180px;
+  }
 }
 
 .l-nav {
@@ -15,7 +27,7 @@
   @include respond-to('bp3') {
     position: absolute;
     top: -120px;
-    width: calc(33.333% - 16px);
+    width: calc(33.333% - 24px);
     margin: 0 $gutter * 2;
   }
 }
@@ -27,7 +39,7 @@
 
   @include respond-to('bp3') {
     width: 66.666%;
-    margin-left: calc(33.333% + 16px);
+    margin-left: calc(33.333% + 24px);
     margin-right: 0;
   }
 }

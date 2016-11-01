@@ -3,6 +3,21 @@
   margin: 0.5em 0;
 }
 
+.link--back {
+  display: none;
+
+  @include respond-to('bp4') {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 16px;
+    color: $black-60;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
 .link--left {
   float: left;
 }

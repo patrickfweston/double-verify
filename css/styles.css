@@ -18,8 +18,16 @@
 body {
   background-color: green; }
 
-.l-main {
-  position: relative; }
+.l-main, .l-main--header {
+  position: relative;
+  max-width: 1100px; }
+
+.l-main--header {
+  margin: 0 auto;
+  max-width: calc(1100px - 48px); }
+  @media (min-width: 960px) {
+    .l-main--header {
+      min-height: 180px; } }
 
 .l-nav {
   position: relative; }
@@ -32,7 +40,7 @@ body {
     .l-overview {
       position: absolute;
       top: -120px;
-      width: calc(33.333% - 16px);
+      width: calc(33.333% - 24px);
       margin: 0 16px; } }
 
 .l-container {
@@ -42,7 +50,7 @@ body {
   @media (min-width: 960px) {
     .l-container {
       width: 66.666%;
-      margin-left: calc(33.333% + 16px);
+      margin-left: calc(33.333% + 24px);
       margin-right: 0; } }
 
 .l-wrapper {
@@ -54,44 +62,50 @@ body {
 
 body,
 p {
-  font-family: Roboto, Helvetica, "Helvetica Neue", Arial, sans-serif; }
+  font-family: Roboto, Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px; }
 
 h1 {
   margin-top: 0;
-  margin-bottom: 0;
-  font-size: 2em;
-  font-weight: 100;
-  line-height: 1.5em;
+  margin-bottom: 0.25em;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: 0.25px;
   color: #4F4C4D; }
 
 h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.25em;
-  font-weight: 100;
-  line-height: 1.25em;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.5em;
   color: #4F4C4D; }
 
 h2.subtitle {
   margin-bottom: 1em;
   font-size: 1.125em;
-  font-weight: 100;
-  color: #918F8F; }
+  font-weight: 400;
+  color: #BDBBBC; }
 
 a {
   color: #09AFF8;
   text-decoration: none; }
+
+.material-icons {
+  font-size: 1em; }
 
 .card {
   margin-bottom: 16px; }
 
 .card__content {
   border: 1px solid #E7E6E6;
-  box-shadow: 0 0 2px 2px #E7E6E6;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   padding: 24px; }
 
 .header--top {
+  position: relative;
   background-color: #09AFF8; }
   @media (min-width: 840px) {
     .header--top {
@@ -146,7 +160,7 @@ a {
   right: 0; }
 
 .stats {
-  margin: 1em 0; }
+  margin: 1.25em 0; }
 
 .stat {
   float: left;
@@ -160,12 +174,25 @@ a {
   color: #4F4C4D; }
 
 .stat__small {
-  font-size: 0.85em;
-  color: #918F8F; }
+  font-size: 0.9em;
+  color: #BDBBBC; }
 
 .link--block {
   display: block;
   margin: 0.5em 0; }
+
+.link--back {
+  display: none; }
+  @media (min-width: 1280px) {
+    .link--back {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin: 16px;
+      color: #BDBBBC;
+      text-transform: uppercase;
+      font-weight: 300; } }
 
 .link--left {
   float: left; }

@@ -4,7 +4,7 @@
 
 .card__content {
   border: 1px solid $gray;
-  box-shadow: 0 0 2px 2px $gray;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
   background-color: $white;
   padding: $gutter * 3;
 }

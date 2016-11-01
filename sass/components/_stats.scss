@@ -1,6 +1,6 @@
 .stats {
   @extend .clearfix;
-  margin: 1em 0;
+  margin: 1.25em 0;
 }
 
 .stat {
@@ -17,6 +17,6 @@
 }
 
 .stat__small {
-  font-size: 0.85em;
-  color: $black-80;
+  font-size: 0.9em;
+  color: $black-60;
 }
