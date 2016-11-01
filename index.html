@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
   <div class="header--top">
     <a class="link--back" href="#"><i class="material-icons">arrow_back</i> Back</a>
     <div class="l-main--header">
-      <form class="form--search">
-        <input class="form__search" type="text" placeholder="Search for anything" />
-        <input class="form__submit" type="submit" />
-      </form>
-      <nav class="nav--quick-actions">
-        <ul>
-          <li>Menu</li>
-          <li>Notifications</li>
-        </ul>
-      </nav>
+      <div class="header--tools">
+        <span class="form--search__reveal"></span>
+        <form class="form--search">
+          <input class="form__search" type="text" placeholder="Search for anything" />
+          <input class="form__submit" type="submit" />
+        </form>
+        <nav class="nav--quick-actions">
+          <a href="#" class="nav--quick-actions__item"><i class="material-icons">menu</i> <span class="visually-hidden">Menu</span></a>
+          <a href="#" class="nav--quick-actions__item"><i class="material-icons">chat</i> <span class="visually-hidden">Notifications</span></a>
+        </nav>
+      </div>
       <nav class="nav--main">
         <div class="l-wrapper nav--main__wrapper">
           <a href="#" class="tabs active">Summary</a>
@@ -76,15 +78,14 @@
     <div class="l-container">
       <div class="card mdl-cell--12-col">
         <!-- Right aligned menu below button -->
-        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-          <i class="material-icons">expand_more</i>
+        <button id="bar-chart-options" class="bar-chart__options mdl-button mdl-js-button">
+          2015 <i class="material-icons">expand_more</i>
         </button>
 
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-          <li class="mdl-menu__item">Some Action</li>
-          <li class="mdl-menu__item">Another Action</li>
-          <li disabled class="mdl-menu__item">Disabled Action</li>
-          <li class="mdl-menu__item">Yet Another Action</li>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="bar-chart-options">
+          <li class="mdl-menu__item">2014</li>
+          <li class="mdl-menu__item">2013</li>
+          <li class="mdl-menu__item">2012</li>
         </ul>
         <div class="card__content">
           <h2>Visits</h2>

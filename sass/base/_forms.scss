@@ -1,10 +1,38 @@
 // Styles for forms
 .form--search {
+  display: none;
   position: relative;
   border-bottom: 1px solid $white;
+  margin: 16px;
+  width: 66.666%;
+
+  &.is-visible {
+    display: block;
+  }
 
   @include respond-to('bp3') {
-    width: calc(33.333% - 8px);
+    display: block;
+    width: calc(33.333% - 16px);
+    margin: 0;
+  }
+}
+
+.form--search__reveal {
+  display: block;
+  margin: $gutter * 2;
+  height: 20px;
+  width: 20px;
+  background: $white url('/svg/ic_search_24px.svg') center center no-repeat;
+  border: 1px solid $primary-40;
+  border-radius: 10px;
+  background-size: 15px 15px;
+
+  &.is-hidden {
+    display: none;
+  }
+
+  @include respond-to('bp3') {
+    display: none;
   }
 }
 
@@ -35,8 +63,8 @@
 .form__submit {
   position: absolute;
   top: 50%;
-  right: -10px;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  right: 0;
   height: 20px;
   width: 20px;
   border: 0;

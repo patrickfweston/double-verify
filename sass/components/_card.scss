@@ -1,8 +1,10 @@
 .card {
+  clear: both;
   margin-bottom: $gutter * 2;
 }
 
 .card__content {
+  clear: both;
   border: 1px solid $gray;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
   background-color: $white;

@@ -1,9 +1,16 @@
 .header--top {
+  @extend .clearfix;
   position: relative;
   background-color: $primary;
+  margin-bottom: 1em;
 
-  @include respond-to('bp2') {
+  @include respond-to('bp3') {
     min-height: 180px;
+    margin: 0;
     padding-top: 1em;
   }
+}
+
+.header--tools {
+  position: relative;
 }

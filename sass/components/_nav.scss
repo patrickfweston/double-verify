@@ -1,9 +1,22 @@
 .nav--quick-actions {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  
+  margin-right: $gutter * 2;
+  color: $white;
+
   @include respond-to('bp3') {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-top: $gutter;
+    margin-right: 0;
   }
+}
+
+a.nav--quick-actions__item {
+  color: $white;
+  font-size: 1.5em;
+  margin-left: 0.5em;
 }
 
 .nav--main {
