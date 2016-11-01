@@ -61,6 +61,7 @@ h1 {
   margin-bottom: 0;
   font-size: 2em;
   font-weight: 100;
+  line-height: 1.5em;
   color: #4F4C4D; }
 
 h2 {
@@ -68,7 +69,18 @@ h2 {
   margin-bottom: 0;
   font-size: 1.25em;
   font-weight: 100;
+  line-height: 1.25em;
   color: #4F4C4D; }
+
+h2.subtitle {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  font-weight: 100;
+  color: #918F8F; }
+
+a {
+  color: #09AFF8;
+  text-decoration: none; }
 
 .card {
   margin-bottom: 16px; }
@@ -133,6 +145,9 @@ h2 {
   top: 0;
   right: 0; }
 
+.stats {
+  margin: 1em 0; }
+
 .stat {
   float: left;
   width: 25%;
@@ -147,3 +162,13 @@ h2 {
 .stat__small {
   font-size: 0.85em;
   color: #918F8F; }
+
+.link--block {
+  display: block;
+  margin: 0.5em 0; }
+
+.link--left {
+  float: left; }
+
+.link--right {
+  float: right; }
