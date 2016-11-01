@@ -1,0 +1,56 @@
+// Styles for forms
+.form--search {
+  position: relative;
+  border-bottom: 1px solid $white;
+
+  @include respond-to('bp3') {
+    width: calc(33.333% - 8px);
+  }
+}
+
+.form__search {
+  font-size: 1.5em;
+  font-weight: 100;
+  border: 0;
+  background: transparent;
+  color: $white;
+  padding: $gutter;
+  outline: 0;
+
+  &:-moz-placeholder {
+    color: rgba($white, 0.6);
+  }
+  &::-moz-placeholder {
+    color: rgba($white, 0.6);
+  }
+  &:-ms-input-placeholder {
+    color: rgba($white, 0.6);
+  }
+  &::-webkit-input-placeholder {
+    color: rgba($white, 0.6);
+  }
+}
+
+
+.form__submit {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 0;
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.5);
+  border: 1px solid $primary-40;
+  background: $white url('/svg/ic_search_24px.svg') center center no-repeat;
+  background-size: 15px 15px;
+  // transition: all 0.25s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    // box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+    border: 1px solid $white;
+  }
+}
