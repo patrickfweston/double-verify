@@ -1,0 +1,25 @@
+.tabs {
+  margin: 0;
+  border: none;
+  padding: 0 16px;
+  float: left;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $primary-20;
+  overflow: hidden;
+}
+
+.tabs--more {
+  @extend .tabs;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}

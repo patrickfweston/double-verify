@@ -1,0 +1,23 @@
+.nav--quick-actions {
+  @include respond-to('bp3') {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.nav--main {
+  height: 48px;
+  overflow: hidden;
+
+  @include respond-to('bp3') {
+    position: absolute;
+    bottom: 0;
+    left: calc(33.333% + 16px);
+    width: calc(66.666% - 16px);
+  }
+}
+
+.nav--main__wrapper {
+  padding-right: 80px;
+}

@@ -17,3 +17,18 @@
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+// Clearfix from: http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

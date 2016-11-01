@@ -1,9 +1,38 @@
-// Layout styles 
-.container {
+// Layout styles
+.l-nav {
+  position: relative;
+}
+
+.l-overview {
+  position: relative;
+  width: calc(100% - #{$gutter * 3});
+  margin: 0 auto;
+
+  @include respond-to('bp3') {
+    position: absolute;
+    top: 6em;
+    width: calc(33.333% - 16px);
+    margin: 0 $gutter * 2;
+  }
+}
+
+.l-container {
+  position: relative;
   width: 100%;
+  margin: 0 $gutter * 2;
 
   @include respond-to('bp3') {
     width: 66.666%;
-    margin-left: 33.333%;
+    margin-left: calc(33.333% + 16px);
+    margin-right: 0;
   }
+}
+
+.l-wrapper {
+  position: relative;
+  margin: 0 $gutter * 2;
+}
+
+.mdl-grid {
+  padding-right: 0;
 }

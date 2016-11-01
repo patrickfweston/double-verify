@@ -8,8 +8,31 @@
   <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <div class="">
-    <header class="">
+  <div class="l-nav header--top">
+    <form>
+      <input type="text" placeholder="Search for anything" />
+      <input type="submit" />
+    </form>
+    <nav class="nav--quick-actions">
+      <ul>
+        <li>Menu</li>
+        <li>Notifications</li>
+      </ul>
+    </nav>
+    <nav class="nav--main">
+      <div class="l-wrapper nav--main__wrapper">
+        <a href="#" class="tabs">Summary</a>
+        <a href="#" class="tabs">Activity</a>
+        <a href="#" class="tabs">Visits</a>
+        <a href="#" class="tabs">Physicians</a>
+        <a href="#" class="tabs">Patients</a>
+        <a href="#" class="tabs">Complaints</a>
+        <a href="#" class="tabs">Diagnoses</a>
+        <a href="#" class="tabs">Medications</a>
+        <a href="#" class="tabs--more">More</a>
+      </div>
+    </nav>
+    <header class="l-overview card">
       <div class="">
         <h1>Cardiology and Cardiac Surgery</h1>
         <h2>Oxford General Medical Center</h2>
@@ -18,36 +41,36 @@
 
       </div>
     </header>
-    <main class="mdl-grid">
-      <div class="container">
-        <div class="card mdl-cell--12-col">
-          <!-- Right aligned menu below button -->
-          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-            <i class="material-icons">expand_more</i>
-          </button>
+  </div>
+  <main class="mdl-grid">
+    <div class="l-container">
+      <div class="card mdl-cell--12-col">
+        <!-- Right aligned menu below button -->
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">expand_more</i>
+        </button>
 
-          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-            <li class="mdl-menu__item">Some Action</li>
-            <li class="mdl-menu__item">Another Action</li>
-            <li disabled class="mdl-menu__item">Disabled Action</li>
-            <li class="mdl-menu__item">Yet Another Action</li>
-          </ul>
-          <div class="card__content">
-            <h2>Visits</h2>
-          </div>
-        </div>
-        <div class="card mdl-cell--12-col">
-          <div class="card__content">
-            <h2>Insurance</h2>
-          </div>
-        </div>
-        <div class="card mdl-cell--12-col">
-          <div class="card__content">
-            <h2>Patient Demographics</h2>
-          </div>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+          <li class="mdl-menu__item">Some Action</li>
+          <li class="mdl-menu__item">Another Action</li>
+          <li disabled class="mdl-menu__item">Disabled Action</li>
+          <li class="mdl-menu__item">Yet Another Action</li>
+        </ul>
+        <div class="card__content">
+          <h2>Visits</h2>
         </div>
       </div>
-    </main>
-  </div>
+      <div class="card mdl-cell--12-col">
+        <div class="card__content">
+          <h2>Insurance</h2>
+        </div>
+      </div>
+      <div class="card mdl-cell--12-col">
+        <div class="card__content">
+          <h2>Patient Demographics</h2>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

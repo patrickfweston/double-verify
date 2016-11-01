@@ -1,6 +1,9 @@
 // Colors
 $primary: #09AFF8;
-$primary-80: lighten($primary, 0.9);
+$primary-80: #34bff9;
+$primary-60: #66cffa;
+$primary-40: #99dffc;
+$primary-20: #cceffd;
 
 $black: #000;
 
@@ -19,6 +22,13 @@ $breakpoints: (
   'bp6': 1600px,
 ) !default;
 
+// Default values
+$gutter: 8px;
+
+// Reset styles
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: green;
