@@ -1,0 +1,21 @@
+.stats {
+  @extend .clearfix;
+}
+
+.stat {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.stat__large {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+  color: $black;
+}
+
+.stat__small {
+  font-size: 0.85em;
+  color: $black-80;
+}

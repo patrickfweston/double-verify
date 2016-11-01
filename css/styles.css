@@ -1,14 +1,15 @@
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .stats:before,
+.clearfix:after,
+.stats:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after {
+.clearfix:after, .stats:after {
   clear: both; }
 
-.clearfix {
+.clearfix, .stats {
   *zoom: 1; }
 
 * {
@@ -131,3 +132,18 @@ h2 {
   position: absolute;
   top: 0;
   right: 0; }
+
+.stat {
+  float: left;
+  width: 25%;
+  text-align: center; }
+
+.stat__large {
+  display: block;
+  font-size: 1.5em;
+  margin-bottom: 0.25em;
+  color: #4F4C4D; }
+
+.stat__small {
+  font-size: 0.85em;
+  color: #918F8F; }
