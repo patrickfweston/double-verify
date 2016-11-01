@@ -12,8 +12,18 @@
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: $primary-20;
+  color: $primary-40;
   overflow: hidden;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    color: $white;
+  }
+
+  &.active {
+    color: $white;
+    border-bottom: 4px solid $primary-120;
+  }
 }
 
 .tabs--more {

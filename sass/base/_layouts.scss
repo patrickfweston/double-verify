@@ -1,4 +1,8 @@
 // Layout styles
+.l-main {
+  position: relative;
+}
+
 .l-nav {
   position: relative;
 }
@@ -10,7 +14,7 @@
 
   @include respond-to('bp3') {
     position: absolute;
-    top: 6em;
+    top: -120px;
     width: calc(33.333% - 16px);
     margin: 0 $gutter * 2;
   }

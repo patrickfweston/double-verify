@@ -17,6 +17,9 @@
 body {
   background-color: green; }
 
+.l-main {
+  position: relative; }
+
 .l-nav {
   position: relative; }
 
@@ -27,7 +30,7 @@ body {
   @media (min-width: 960px) {
     .l-overview {
       position: absolute;
-      top: 6em;
+      top: -120px;
       width: calc(33.333% - 16px);
       margin: 0 16px; } }
 
@@ -48,13 +51,32 @@ body {
 .mdl-grid {
   padding-right: 0; }
 
+body,
+p {
+  font-family: Roboto, Helvetica, "Helvetica Neue", Arial, sans-serif; }
+
 h1 {
-  color: #34bff9; }
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: 100;
+  color: #4F4C4D; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.25em;
+  font-weight: 100;
+  color: #4F4C4D; }
 
 .card {
+  margin-bottom: 16px; }
+
+.card__content {
   border: 1px solid #E7E6E6;
   box-shadow: 0 0 2px 2px #E7E6E6;
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 24px; }
 
 .header--top {
   background-color: #09AFF8; }
@@ -96,8 +118,14 @@ h1 {
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
-  color: #cceffd;
-  overflow: hidden; }
+  color: #99dffc;
+  overflow: hidden;
+  transition: all 0.25s ease-in-out; }
+  .tabs:hover, .tabs--more:hover {
+    color: #fff; }
+  .tabs.active, .active.tabs--more {
+    color: #fff;
+    border-bottom: 4px solid #0988CA; }
 
 .tabs--more {
   position: absolute;

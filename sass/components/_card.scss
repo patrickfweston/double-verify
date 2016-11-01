@@ -1,5 +1,10 @@
 .card {
+  margin-bottom: $gutter * 2;
+}
+
+.card__content {
   border: 1px solid $gray;
   box-shadow: 0 0 2px 2px $gray;
   background-color: $white;
+  padding: $gutter * 3;
 }
