@@ -22,7 +22,7 @@
 
 .l-overview {
   position: relative;
-  width: calc(100% - #{$gutter * 3});
+  width: calc(100% - 24px);
   margin: 0 auto;
 
   @include respond-to('bp3') {
@@ -35,13 +35,13 @@
 
 .l-container {
   position: relative;
-  width: 100%;
-  margin: 0 $gutter * 2;
+  width: calc(100% - 24px);
+  margin: 0 auto;
 
   @include respond-to('bp3') {
     width: 66.666%;
     margin-left: calc(33.333% + 24px);
-    margin-right: 0;
+    margin-right: $gutter;
   }
 }
 
@@ -51,5 +51,5 @@
 }
 
 .mdl-grid {
-  padding-right: 0;
+  padding: 0;
 }

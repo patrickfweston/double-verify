@@ -1,0 +1,33 @@
+.visits {
+  padding: 20px 0;
+
+  path.area {
+    fill: $primary-10;
+  }
+
+  .line {
+    fill: none;
+    stroke: $primary;
+    stroke-width: 2px;
+  }
+
+  .x-axis .domain,
+  .x-axis .tick line {
+    display: none;
+  }
+
+  .grid .tick line {
+    stroke: $gray;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+  }
+  .grid path {
+    stroke-width: 0;
+  }
+
+  text {
+    font-size: 1.15em;
+    font-weight: 100;
+    fill: $black-60;
+  }
+}

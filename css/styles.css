@@ -57,20 +57,20 @@ body {
 
 .l-container {
   position: relative;
-  width: 100%;
-  margin: 0 16px; }
+  width: calc(100% - 24px);
+  margin: 0 auto; }
   @media (min-width: 960px) {
     .l-container {
       width: 66.666%;
       margin-left: calc(33.333% + 24px);
-      margin-right: 0; } }
+      margin-right: 8px; } }
 
 .l-wrapper {
   position: relative;
   margin: 0 16px; }
 
 .mdl-grid {
-  padding-right: 0; }
+  padding: 0; }
 
 body,
 p {
@@ -170,6 +170,9 @@ a {
   .form__submit:hover {
     cursor: pointer;
     border: 1px solid #fff; }
+
+.bar-chart {
+  margin: 20px 0; }
 
 .bar-chart__options {
   float: right;
@@ -300,3 +303,52 @@ a.nav--quick-actions__item {
 
 .link--right {
   float: right; }
+
+.visits {
+  padding: 20px 0; }
+  .visits path.area {
+    fill: #e9f7fe; }
+  .visits .line {
+    fill: none;
+    stroke: #09AFF8;
+    stroke-width: 2px; }
+  .visits .x-axis .domain,
+  .visits .x-axis .tick line {
+    display: none; }
+  .visits .grid .tick line {
+    stroke: #E7E6E6;
+    stroke-width: 1px;
+    shape-rendering: crispEdges; }
+  .visits .grid path {
+    stroke-width: 0; }
+  .visits text {
+    font-size: 1.15em;
+    font-weight: 100;
+    fill: #BDBBBC; }
+
+.map {
+  margin: 20px 0; }
+  .map .counties {
+    fill: none; }
+  .map .states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round; }
+  .map .q0-9 {
+    fill: #cceffd; }
+  .map .q1-9 {
+    fill: #cbeffd; }
+  .map .q2-9 {
+    fill: #99dffc; }
+  .map .q3-9 {
+    fill: #97defc; }
+  .map .q4-9 {
+    fill: #66cffa; }
+  .map .q5-9 {
+    fill: #66cffa; }
+  .map .q6-9 {
+    fill: #34bff9; }
+  .map .q7-9 {
+    fill: #3bbff9; }
+  .map .q8-9 {
+    fill: #09AFF8; }

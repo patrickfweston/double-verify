@@ -1,0 +1,23 @@
+.map {
+  margin: 20px 0;
+
+  .counties {
+  fill: none;
+  }
+
+  .states {
+  fill: none;
+  stroke: #fff;
+  stroke-linejoin: round;
+  }
+
+  .q0-9 { fill:$primary-20; }
+  .q1-9 { fill:lighten($primary-40, 10%); }
+  .q2-9 { fill:$primary-40; }
+  .q3-9 { fill:lighten($primary-60, 10%); }
+  .q4-9 { fill:$primary-60; }
+  .q5-9 { fill:lighten($primary-80, 10%); }
+  .q6-9 { fill:$primary-80; }
+  .q7-9 { fill:lighten($primary, 10%); }
+  .q8-9 { fill:$primary; }
+}
