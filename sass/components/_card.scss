@@ -10,3 +10,8 @@
   background-color: $white;
   padding: $gutter * 3;
 }
+
+.card--full-height,
+.card--full-height .card__content {
+  height: 100%;
+}

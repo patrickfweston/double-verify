@@ -192,6 +192,10 @@ a {
   background-color: #fff;
   padding: 24px; }
 
+.card--full-height,
+.card--full-height .card__content {
+  height: 100%; }
+
 .header--top {
   position: relative;
   background-color: #09AFF8;
@@ -352,3 +356,9 @@ a.nav--quick-actions__item {
     fill: #3bbff9; }
   .map .q8-9 {
     fill: #09AFF8; }
+
+.map--embed {
+  margin: 16px -24px; }
+
+.footer {
+  height: 40px; }
