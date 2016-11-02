@@ -7,6 +7,7 @@ $(document).on('ready', function() {
   setRailHeight();
 });
 
+// On document load or resize, resize the rail's height.
 $(window).on('load', function() {
   setRailHeight();
 });

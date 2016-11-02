@@ -1,10 +1,12 @@
 var barChart = (function() {
+  // Get the container's width.
   var parentWidth = $('svg.visits').parent('.card__content').width();
 
   var margin = {top: 20, right: 30, bottom: 40, left: 30},
       width = parentWidth - margin.left - margin.right,
       height = 275 - margin.top - margin.bottom;
 
+  // Parse the date from the source CSV file.
   var parseDate = d3.timeParse("%d-%b-%y");
 
   var x = d3.scaleTime()
@@ -43,19 +45,22 @@ var barChart = (function() {
     x.domain(d3.extent(data, function(d) { return d.date; }));
     y.domain([0, d3.max(data, function(d) { return d.close; })]);
 
+    // Add the filled in area below.
     svg.append("path")
       .datum(data)
       .attr("class", "area")
       .attr("d", area);
 
+    // Also add in the grid lines.
     svg.append("g")
       .attr("class", "grid")
       .attr("transform", "translate(0," + height + ")")
-      .call(make_x_axis()
+      .call(xGridLines()
         .tickSize(-height, 0, 0)
         .tickFormat("")
       );
 
+    // Add in the top line on the graph.
     svg.append("path")
       .datum(data)
       .attr("class", "line")
@@ -68,9 +73,9 @@ var barChart = (function() {
   });
 
   // function for the x grid lines
-function make_x_axis() {
-  return d3.axisBottom()
-    .scale(x)
-    .ticks(12)
-}
+  function xGridLines() {
+    return d3.axisBottom()
+      .scale(x)
+      .ticks(12)
+  }
 })();
